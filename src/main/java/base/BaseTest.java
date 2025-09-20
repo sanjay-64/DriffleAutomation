@@ -10,15 +10,14 @@ public class BaseTest
 {
     protected WebDriver driver;
 
-    @BeforeClass
+    @BeforeMethod
     public void setup() {
-        // Use WebDriverManager to setup Chrome driver automatically
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
 
-    @AfterClass
+    @AfterMethod
     public void tearDown() {
         if (driver != null) {
             driver.quit();
