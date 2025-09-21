@@ -28,6 +28,7 @@ public class LoginTest extends BaseTest
         driver.get("https://driffle.com/");
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login(username, password);
+        System.out.println("success!.");
 
 
 
