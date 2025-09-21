@@ -30,6 +30,9 @@ public class LoginTest extends BaseTest
         loginPage.login(username, password);
         System.out.println("success!.");
         System.out.println("Not success!.");
+        System.out.println("Not success!.");
+        System.out.println("Not success!.");
+        System.out.println("Not success!.");
 
 
 
