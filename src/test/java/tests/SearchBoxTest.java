@@ -6,7 +6,7 @@ import pages.SearchPage;
 
 public class SearchBoxTest extends BaseTest {
 
-    @Test(priority = 1, groups = {"smoke", "sanity", "regression"})
+    @Test(priority = 1, groups = {"smoke", "regression"}, enabled = true, invocationCount=1)
     public void testSearchSpotifyProduct() {
         driver.get("https://driffle.com/");
         SearchPage searchPage = new SearchPage(driver);
